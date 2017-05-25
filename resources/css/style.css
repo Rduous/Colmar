@@ -1,0 +1,50 @@
+body {
+  font-size: 16px;
+  width: 100%;
+  margin: auto;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.dark {
+  color: darkgrey;
+}
+
+.medium {
+  color: gainsboro;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  height: 4rem;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.logo img {
+  height: 3rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*font-size: 1.25rem;*/
+}
+
+nav span {
+  padding: 0 0.5rem;
+}
+
+nav.mobile  {
+  display: none;
+}
