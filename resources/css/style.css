@@ -31,14 +31,20 @@ body {
 }
 
 .image-container {
+  display: flex;
+  align-items: center;
   padding: 2rem 1.5rem;
+  flex-grow: 1;
 }
 
 .image-container img {
   display: block;
   margin: auto;
-  height: 90%;
   width: 100%;
+}
+
+.image-container img.mobile {
+  display: none;
 }
 
 h1 {
@@ -51,6 +57,12 @@ h2 {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 1.5rem 0;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
 }
 
 /* Header section */
@@ -83,7 +95,7 @@ nav.mobile  {
   display: none;
 }
 
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: 635px) {
 
   header .logo {
     display: none;
@@ -127,7 +139,7 @@ nav.mobile  {
   margin-bottom: 1.5rem;
 }
 
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 650px) {
 
   .learn .image-container {
     display: none;
@@ -136,5 +148,81 @@ nav.mobile  {
   .learn .content {
     padding: 0 1rem;
     width: calc(100% - 2rem);
+  }
+
+  .learn .button {
+    max-width: 275px;
+  }
+}
+
+/* Information section */
+.practice {
+  flex-direction: column;
+  border-right: 1px solid gainsboro;
+}
+
+.practice .text {
+  margin: 0 1.5rem 2rem 1.5rem;
+}
+
+.practice h2 {
+  margin-top: 0;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.link {
+  width: 423px;
+  display: flex;
+  border: 1px solid gainsboro;
+}
+
+.link .image-container {
+  width: 35%;
+  padding: 16px;
+}
+
+.link .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.link .content span {
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 650px) {
+  .image-container img.mobile {
+    display: block;
+  }
+
+  .image-container img.desktop {
+    display: none;
+  }
+  .practice {
+    display: none;
+  }
+
+  .links {
+    margin: 1rem;
+    width: calc(100% - 2rem);
+  }
+
+  .link {
+    border: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .link .image-container {
+    width: 100%;
+    padding: 0;
+    margin: 1rem 0;
   }
 }
