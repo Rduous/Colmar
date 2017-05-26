@@ -71,10 +71,10 @@ header {
   justify-content: space-between;
   border-bottom: 1px solid black;
   height: 4rem;
+  padding: 0 1.5rem;
 }
 
 header .logo {
-  padding-left: 1.5rem;
   font-size: 1.5rem;
 }
 
@@ -95,7 +95,7 @@ nav.mobile  {
   display: none;
 }
 
-@media only screen and (max-width: 635px) {
+@media only screen and (max-width: 660px) {
 
   header .logo {
     display: none;
@@ -183,17 +183,19 @@ nav.mobile  {
 
 .link .image-container {
   width: 35%;
-  padding: 16px;
+  padding: 1rem;
 }
 
 .link .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 65%;
 }
 
 .link .content span {
   margin-bottom: 0.5rem;
+  width: auto;
 }
 
 @media only screen and (max-width: 650px) {
@@ -224,5 +226,65 @@ nav.mobile  {
     width: 100%;
     padding: 0;
     margin: 1rem 0;
+  }
+}
+
+/* Learning section */
+.learning {
+  flex-direction: column;
+}
+
+.learning h1 {
+  margin: 2rem 0 1rem 0;
+}
+
+.courses {
+  flex-flow: row wrap;
+  max-width: 1080px;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+}
+
+.course {
+  width: 15rem;
+  background-color: white;
+  margin: 1rem;
+}
+
+.course .image-container {
+  padding: 0
+  /*margin: 0;*/
+}
+
+.course .text {
+  margin: 1rem 1rem 1.5rem 1rem;
+}
+
+.course .text .uppercase {
+  margin: 0.5rem 0;
+}
+
+@media only screen and (max-width: 450px) {
+
+  .learning {
+    background-color: white;
+  }
+
+  .courses, .learning {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .course {
+    max-width: 20rem;
+    width: calc(100% - 1rem);
+    margin: 0.25rem 0.5rem;
+    background-color: gainsboro;
+  }
+
+  .course .image-container, .course p {
+    display: none;
   }
 }
