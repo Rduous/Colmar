@@ -34,10 +34,21 @@ body {
   display: flex;
   align-items: center;
   padding: 2rem 1.5rem;
-  flex-grow: 1;
 }
 
 .image-container img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+}
+
+.video-container {
+  display: inline-block;
+}
+
+.video-container video {
   display: block;
   margin: auto;
   width: 100%;
@@ -249,7 +260,7 @@ nav.mobile  {
 .courses {
   flex-flow: row nowrap;
   max-width: 1080px;
-  width: 95%;
+  width: 90%;
   margin: auto;
   justify-content: center;
 }
@@ -317,6 +328,63 @@ nav.mobile  {
   }
 
   .course .image-container, .course p {
+    display: none;
+  }
+}
+
+/* Thesis section */
+
+.thesis-section {
+  flex-direction: column;
+}
+
+.thesis-section h1 {
+  margin: 2rem 0;
+}
+
+.columns {
+  margin: 0 1.5rem;
+  align-items: flex-start;
+}
+
+.left-column, .right-column {
+  flex-direction: column;
+  justify-content: flex-start;
+  width: auto;
+}
+
+.left-column h3 {
+  margin: 1.5rem 0;
+}
+
+.right-column {
+  width: 26.5rem;
+}
+
+.thesis {
+  display: flex;
+  align-items: center;
+  height: 10.5rem;
+  width: 26.5rem;
+  padding: 1rem 0;
+}
+
+.thesis:hover {
+  background-color: gainsboro;
+}
+
+.thesis .image-container {
+  height: 9.75rem;
+  width: 9.75rem;
+  padding: 0 1rem 0 1rem;
+}
+
+.thesis .text {
+  flex: 2;
+}
+
+@media only screen and (max-width: 900px) {
+  .right-column, .left-column .text {
     display: none;
   }
 }
