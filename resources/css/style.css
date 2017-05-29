@@ -2,7 +2,8 @@ body, html {
   font-size: 16px;
   width: 100%;
   margin: auto;
-  font-family: Arial;
+  font-family: Ubuntu, sans-serif, Arial;
+  font-weight: 300;
 }
 
 h1, h2, h3 {
@@ -55,7 +56,7 @@ a {
 h1 {
   font-size: 2rem;
   font-weight: bold;
-  margin: 1.5rem 0;
+  margin: 2rem 0;
 }
 
 h2 {
@@ -118,52 +119,63 @@ nav.mobile  {
   nav.desktop {
     display: none;
   }
+
+  nav span img {
+    height: 1.5rem;
+  }
+
+  nav span:first-child img {
+    height: 2rem;
+  }
 }
 
-/* Learn something section */
-.learn {
-}
+/* Banner section */
 
-.learn .image-container {
+.banner .image-container {
   width: 60%;
 }
 
-.learn .content {
+.banner .content {
   width: 35%;
   flex-direction: column;
-  text-align: center;
+  align-items: flex-start;
   padding: 0 1rem;
   margin: 0.5rem 0;
 }
 
-.learn p {
+.banner h1 {
+  margin-bottom: 1rem;
+}
+
+.banner p {
   margin: 0.75rem 0;
   width: 70%;
 }
 
-.learn .button {
+.banner .button {
+  text-align: center;
   padding: 0.5rem 0;
   margin-bottom: 1.5rem;
   border-radius: 5px;
 }
 
-.learn .button:hover, nav span:hover {
+.banner .button:hover, nav span:hover {
   background-color: rgb(2, 119, 191);
   transition: 300ms 100ms;
 }
 
 @media only screen and (max-width: 650px) {
 
-  .learn .image-container {
+  .banner .image-container {
     display: none;
   }
 
-  .learn .content {
+  .banner .content {
     padding: 0 1rem;
     width: calc(100% - 2rem);
   }
 
-  .learn .button {
+  .banner .button {
     max-width: 275px;
   }
 }
@@ -369,10 +381,6 @@ nav.mobile  {
 .thesis-section {
   flex-direction: column;
   padding-bottom: 2rem;
-}
-
-.thesis-section h1 {
-  margin: 2rem 0;
 }
 
 .columns {
