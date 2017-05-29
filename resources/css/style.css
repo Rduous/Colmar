@@ -182,6 +182,12 @@ nav.mobile  {
   margin: 0 1.5rem 2rem 1.5rem;
 }
 
+.practice .text span {
+  display: block;
+  font-weight: bold;
+  padding: 2rem 0;
+}
+
 .practice h2 {
   margin-top: 0;
 }
