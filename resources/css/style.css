@@ -218,10 +218,30 @@ nav.mobile  {
     display: block;
   }
 
-  .image-container img.desktop {
+  .image-container img.desktop, .practice {
     display: none;
   }
-  .practice {
+
+  .links {
+    margin: 1rem;
+    width: calc(100% - 2rem);
+  }
+
+  .link {
+    width: 100%;
+  }
+
+  .links .link:last-child {
+    padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .image-container img.mobile {
+    display: block;
+  }
+
+  .image-container img.desktop, .practice{
     display: none;
   }
 
@@ -394,10 +414,16 @@ nav.mobile  {
   }
 }
 
+/* footer section */
 footer {
   justify-content: space-between;
   padding: 1rem;
   border-top: 1px solid gainsboro;
   height: 5rem;
+}
 
+@media only screen and (max-width: 500px) {
+  footer nav {
+    display: none;
+  }
 }
