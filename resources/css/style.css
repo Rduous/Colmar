@@ -9,6 +9,12 @@ h1, h2, h3 {
   font-family: "Arial Black";
 }
 
+a {
+  text-decoration: none;
+  color: rgb(11, 86, 227);
+  font-weight: bold;
+}
+
 .flex {
   display: flex;
   align-items: center;
@@ -87,8 +93,9 @@ nav {
 }
 
 nav span {
-  padding: 0 0.5rem;
+  padding: 0.5rem 0.5rem;
   color: white;
+  border-radius: 5px;
 }
 
 nav.mobile  {
@@ -140,9 +147,9 @@ nav.mobile  {
   border-radius: 5px;
 }
 
-.learn .button:hover {
+.learn .button:hover, nav span:hover {
   background-color: rgb(2, 119, 191);
-  transition: 500ms 100ms;
+  transition: 300ms 100ms;
 }
 
 @media only screen and (max-width: 650px) {
@@ -168,7 +175,7 @@ nav.mobile  {
 
 .practice {
   flex-direction: column;
-  border-right: 1px solid rgb(184, 198, 207);
+  /*border-right: 1px solid rgb(184, 198, 207);*/
 }
 
 .practice .text {
@@ -188,12 +195,12 @@ nav.mobile  {
 .link {
   width: 423px;
   display: flex;
-  border: 1px solid rgb(184, 198, 207);
+  /*border: 1px solid rgb(184, 198, 207);*/
 }
 
-.link:hover {
+.link:hover, .course:hover, .thesis:hover {
   background-color: rgba(24,44,92, .2);
-  transition: 200ms;
+  transition: 300ms 100ms;
 }
 
 .link .image-container {
@@ -214,11 +221,11 @@ nav.mobile  {
 }
 
 @media only screen and (max-width: 650px) {
-  .image-container img.mobile {
+  .link .image-container img.mobile {
     display: block;
   }
 
-  .image-container img.desktop, .practice {
+  .link .image-container img.desktop, .practice {
     display: none;
   }
 
@@ -246,12 +253,12 @@ nav.mobile  {
   }
 
   .links {
-    margin: 1rem;
+    margin: 0 1rem;
     width: calc(100% - 2rem);
   }
 
   .link {
-    border: 0px;
+    /*border: 0px;*/
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
@@ -296,10 +303,6 @@ nav.mobile  {
   flex-shrink: 1;
 }
 
-.course:hover {
-  background-color: rgba(24,44,92, .2);
-}
-
 .course .image-container {
   padding: 0
 }
@@ -330,12 +333,9 @@ nav.mobile  {
 
   .learning {
     background-color: white;
-  }
+    padding: 2rem 0;
+    margin 0;
 
-  .courses, .learning {
-    width: 100%;
-    padding: 0;
-    margin: 0;
   }
 
   .courses {
@@ -347,7 +347,7 @@ nav.mobile  {
     height: auto;
     margin: 0.25rem 0.5rem;
     width: calc(100% - 1rem);
-    background-color: rgb(184, 198, 207);
+    background-color: rgba(24,44,92, 0.4);
   }
 
   .course .text {
@@ -364,7 +364,7 @@ nav.mobile  {
 
 .thesis-section {
   flex-direction: column;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .thesis-section h1 {
@@ -396,10 +396,6 @@ nav.mobile  {
   height: 10.5rem;
   width: 26.5rem;
   padding: 1rem 0;
-}
-
-.thesis:hover {
-  background-color: rgba(24,44,92, .2);
 }
 
 .thesis .image-container {
