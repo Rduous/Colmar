@@ -338,10 +338,8 @@ nav.mobile  {
 @media only screen and (max-width: 560px) {
 
   .learning {
-    background-color: white;
     padding: 2rem 0;
     margin 0;
-
   }
 
   .courses {

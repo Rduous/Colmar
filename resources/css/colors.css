@@ -12,38 +12,8 @@
   background-color: rgb(24,44,92);
 }
 
-.pop-bright {
-  color: rgb(6, 157, 220);
-}
-
-.pop-bright-background {
-  /*background-color: rgb(6, 157, 220);*/
-  background-color: rgb(2, 119, 191)
-}
-
 .warm-pop {
   color: rgb(191, 154, 2);
-}
-
-.warm-background {
-  background-color: rgba(191, 154, 2, .1);
-}
-
-.dark {
-  color: rgb(101, 114, 113);
-}
-
-.dark-background {
-  background-color: rgb(101, 114, 113);
-}
-
-.medium {
-  color: rgb(184, 198, 207);
-}
-
-.medium-background {
-  /*background-color: rgb(184, 198, 207);*/
-  background-color: rgba(24,44,92, 0.4);
 }
 
 .light {
