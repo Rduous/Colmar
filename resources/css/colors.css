@@ -8,7 +8,6 @@
 }
 
 .pop-background {
-  /*background-color: rgb(2, 119, 191);*/
   background-color: rgb(24,44,92);
 }
 
@@ -20,6 +19,7 @@
   color: rgb(245, 247, 251);
 }
 
-.light-background {
+.grey-background {
   background-color: rgb(245, 247, 251);
+  /*background-color: rgba(191, 154, 2, .1)*/
 }

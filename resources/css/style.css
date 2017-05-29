@@ -2,7 +2,7 @@ body, html {
   font-size: 16px;
   width: 100%;
   margin: auto;
-  font-family: Ubuntu, sans-serif, Arial;
+  font-family: Arial;
   font-weight: 300;
 }
 
@@ -121,7 +121,7 @@ nav.mobile  {
   }
 
   nav span img {
-    height: 1.5rem;
+    height: 1.75rem;
   }
 
   nav span:first-child img {
@@ -130,7 +130,6 @@ nav.mobile  {
 }
 
 /* Banner section */
-
 .banner .image-container {
   width: 60%;
 }
@@ -162,6 +161,11 @@ nav.mobile  {
 .banner .button:hover, nav span:hover {
   background-color: rgb(2, 119, 191);
   transition: 300ms 100ms;
+}
+
+.banner .button:active, nav span:active {
+  background-color: rgb(191, 154, 2);
+  transition: 200ms;
 }
 
 @media only screen and (max-width: 650px) {
@@ -217,6 +221,11 @@ nav.mobile  {
 .link:hover, .course:hover, .thesis:hover {
   background-color: rgba(24,44,92, .2);
   transition: 300ms 100ms;
+}
+
+.link:active, .course:active, .thesis:active {
+  background-color: rgba(191, 154, 2, .2);
+  transition: 200ms;
 }
 
 .link .image-container {
@@ -390,7 +399,6 @@ nav.mobile  {
 }
 
 /* Thesis section */
-
 .thesis-section {
   flex-direction: column;
   padding-bottom: 2rem;
