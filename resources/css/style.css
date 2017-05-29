@@ -167,6 +167,10 @@ nav.mobile  {
 }
 
 /* Information section */
+.information {
+  align-items: flex-start;
+}
+
 .practice {
   flex-direction: column;
   border-right: 1px solid gainsboro;
@@ -336,6 +340,7 @@ nav.mobile  {
 
 .thesis-section {
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 
 .thesis-section h1 {
@@ -387,4 +392,12 @@ nav.mobile  {
   .right-column, .left-column .text {
     display: none;
   }
+}
+
+footer {
+  justify-content: space-between;
+  padding: 1rem;
+  border-top: 1px solid gainsboro;
+  height: 5rem;
+
 }
