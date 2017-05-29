@@ -296,6 +296,10 @@ nav.mobile  {
   flex-shrink: 1;
 }
 
+.course:hover {
+  background-color: rgba(24,44,92, .2);
+}
+
 .course .image-container {
   padding: 0
 }
