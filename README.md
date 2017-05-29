@@ -9,6 +9,8 @@ The capstone project for *CodeCademy Ready*.
 ### Color palette
 I let the images of this site drive the color palette. Four "types" of colors seem to predominate: web-y blues, yellow ochres, warm greys, and warm browns.  I focused on the first three families.  I went with a dark, high-impact navy blue for header, footer, and important features like buttons, with a poppier blue for hover actions.  I used a mustard/ochre for select features like logo and main header. I kept the backgrounds simple with alternating grey and light tones.
 
+In order to accommodate the dark blue header, I edited the SVG logos to fill white instead of black.
+
 I intended the colors to be impactful (but not distracting) and just the slightest bit informal.
 
 ### Fonts
