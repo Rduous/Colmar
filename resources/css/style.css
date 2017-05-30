@@ -76,7 +76,6 @@ h3 {
 }
 
 /* Header section */
-
 header {
   justify-content: space-between;
   border-bottom: 1px solid black;
@@ -135,11 +134,11 @@ nav.mobile  {
 
 /* Banner section */
 .banner .image-container {
-  width: 60%;
+  flex: 3;
 }
 
 .banner .content {
-  width: 35%;
+  flex: 2;
   flex-direction: column;
   align-items: flex-start;
   padding: 0 1rem;
@@ -195,6 +194,7 @@ nav.mobile  {
 }
 
 .practice {
+  flex: 3;
   flex-direction: column;
 }
 
@@ -213,13 +213,13 @@ nav.mobile  {
 }
 
 .links {
+  flex: 2;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
 .link {
-  width: 423px;
   display: flex;
 }
 
@@ -235,35 +235,20 @@ nav.mobile  {
 }
 
 .link .image-container {
-  width: 35%;
+  flex: 1;
   padding: 1rem;
 }
 
 .link .content {
+  flex: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 65%;
+  font-size: 1rem;
 }
 
 .link .content span {
   margin-bottom: 0.5rem;
-  width: auto;
-}
-
-/* Tablet layout */
-@media only screen and (max-width: 850px) {
-  .link {
-    width: auto;
-  }
-
-  .links {
-    flex: 1;
-  }
-
-  .practice {
-    flex: 1;
-  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -342,7 +327,7 @@ nav.mobile  {
 
 .courses {
   flex-flow: row nowrap;
-  max-width: 1080px;
+  /*max-width: 1080px;*/
   width: 90%;
   justify-content: center;
 }
@@ -352,6 +337,7 @@ nav.mobile  {
   background-color: white;
   margin: 1rem;
   flex-shrink: 1;
+  flex-grow: 1;
 }
 
 .course .image-container {
@@ -378,6 +364,7 @@ nav.mobile  {
 
   .course .text {
     height: 3.5rem;
+    justify-content: center;
   }
 }
 
