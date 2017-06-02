@@ -7,6 +7,7 @@ body, html {
   font-weight: 300;
   background-color: #111A2A;
   color: #F4E9CE;
+  /*position: fixed;*/
 }
 
 body {
@@ -81,8 +82,8 @@ h3 {
 /* Header section */
 header {
   justify-content: space-between;
-  border-bottom: 1px solid black;
-  height: 4rem;
+  /*border-bottom: 1px solid black;*/
+  height: 8vh;
   padding: 0 1.5rem;
 }
 
@@ -136,7 +137,11 @@ nav.mobile  {
 
 /* main */
 .main {
-  height: calc(100% - 9rem);
+  height: 84vh;
+}
+
+.main input {
+  display: none;
 }
 
 /* sidebar */
@@ -146,38 +151,54 @@ nav.mobile  {
   justify-content: space-around;
 }
 
-.sidebar #banner:checked ~ .banner {
+input:checked ~ .page-holder .page {
+  display: none;
+}
+
+#banner:checked ~ .page-holder .banner {
   display: block;
 }
 
-.sidebar #information:checked ~ .information {
+#information:checked ~ .page-holder .information {
+  display: block;
+  z-index: 1;
+}
+
+#learning:checked ~ .page-holder .learning {
   display: block;
 }
 
-.sidebar #learning:checked ~ .learning {
-  display: block;
-}
-
-.sidebar #thesis-secion:checked ~ .thesis-section {
+#thesis-section:checked ~ .page-holder .thesis-section {
   display: block;
 }
 
 /* content holder */
-.content-holder {
+.page-holder {
   width: calc(100% - 4rem);
+  height: 100%;
   position: relative;
+}
+
+.page {
+  width: 100%;
+  min-height: 100%;
+  display: block;
 }
 
 /* Banner section */
 .banner {
   position: relative;
+  background: url("../images/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   /*display: none;*/
 }
 
-.banner img {
+/*.banner img {
   display: block;
   width: 100%;
-}
+}*/
 
 .banner .overlay {
   position: absolute;
@@ -493,9 +514,9 @@ nav.mobile  {
 /* footer section */
 footer {
   justify-content: space-between;
-  padding: 1rem;
-  border-top: 1px solid rgb(184, 198, 207);
-  height: 5rem;
+  padding: 0 1rem;
+  /*border-top: 1px solid rgb(184, 198, 207);*/
+  height: 8vh;
 }
 
 @media only screen and (max-width: 500px) {
