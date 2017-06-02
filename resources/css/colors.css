@@ -1,7 +1,3 @@
-.white {
-  color: white;
-}
-
 .pop {
   color: rgb(2, 119, 191);
 }
@@ -11,13 +7,13 @@
 }
 
 .warm-pop {
-  color: rgb(191, 154, 2);
+  color: #324A79;
 }
 
 .light {
   color: rgb(245, 247, 251);
 }
 
-.grey-background {
+/*.grey-background {
   background-color: rgb(245, 247, 251);
-}
+}*/
